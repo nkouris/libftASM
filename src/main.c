@@ -79,5 +79,10 @@ int main(void)
 	int	fd = 0;
 	fd = open("./Makefile", O_RDONLY);
 	ft_cat(fd);
+	printf("\n\n\n\n");
+	int64_t two = 0;
+	two = read(99999, hello, 10);
+	printf("error : %#llx\n", two);
+	ft_cat(99999);
 	return (EXIT_SUCCESS);
 }

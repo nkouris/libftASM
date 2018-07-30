@@ -26,9 +26,8 @@ _ft_puts:
 
 ft_newline:
 	mov rax, 0x2000004 ; queue syscall 
-	lea r12, [rbp - 9]
+	lea rsi, [rbp - 9]
 	mov rdi, 1 ; fd in first param
-	mov rsi, r12 ; put address in second param
 	mov rdx, 1 ; len in third param
 	syscall
 ; check for failure
